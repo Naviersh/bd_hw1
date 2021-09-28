@@ -1,6 +1,7 @@
 import os
 import random
 
+
 with open('text.txt') as f:
     strings = [line for line in f]
     line_count = len(strings)
