@@ -1,4 +1,5 @@
 import re
+import gc
 import numpy
 from collections import Counter
 import time
@@ -6,7 +7,7 @@ import time
 start_time = time.time()
 f = open('output.txt', 'w')
 cnt = Counter()
-doc = open('1GB.txt', 'r')
+doc = open('100MB.txt', 'r')
 text_string = doc.read().lower()
 opt = re.sub(r'[^\w\s]','', text_string)
 for word in opt.split():
