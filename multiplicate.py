@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 
 points_x = []
 points_y = []
+
+
 def multiplication(new_file,size):
     file_size = 0
     start_time = time.time()
@@ -19,6 +21,7 @@ def multiplication(new_file,size):
     points_x.append(file_time)
     points_y.append(new_file)
     return new_file, file_time;
+
 
 multiplication('10MB.txt',1024*1024*10)
 multiplication('100MB.txt',1024*1024*100)
